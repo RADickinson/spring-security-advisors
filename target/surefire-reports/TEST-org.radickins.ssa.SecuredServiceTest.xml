@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.radickins.ssa.SecuredServiceTest" time="0.035" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/robd/dev/git/github/spring-security-advisors/target/test-classes:/Users/robd/dev/git/github/spring-security-advisors/target/classes:/Users/robd/dev/m2/repo/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/Users/robd/dev/m2/repo/javax/el/javax.el-api/3.0.0/javax.el-api-3.0.0.jar:/Users/robd/dev/m2/repo/jakarta/inject/jakarta.inject-api/1.0.3/jakarta.inject-api-1.0.3.jar:/Users/robd/dev/m2/repo/org/springframework/spring-core/5.3.32/spring-core-5.3.32.jar:/Users/robd/dev/m2/repo/org/springframework/spring-jcl/5.3.32/spring-jcl-5.3.32.jar:/Users/robd/dev/m2/repo/org/springframework/spring-beans/5.3.32/spring-beans-5.3.32.jar:/Users/robd/dev/m2/repo/org/springframework/spring-aop/5.3.32/spring-aop-5.3.32.jar:/Users/robd/dev/m2/repo/org/springframework/spring-aspects/5.3.32/spring-aspects-5.3.32.jar:/Users/robd/dev/m2/repo/org/springframework/spring-expression/5.3.32/spring-expression-5.3.32.jar:/Users/robd/dev/m2/repo/org/springframework/spring-tx/5.3.32/spring-tx-5.3.32.jar:/Users/robd/dev/m2/repo/org/springframework/spring-context/5.3.32/spring-context-5.3.32.jar:/Users/robd/dev/m2/repo/org/springframework/spring-context-support/5.3.32/spring-context-support-5.3.32.jar:/Users/robd/dev/m2/repo/org/springframework/security/spring-security-config/5.8.13/spring-security-config-5.8.13.jar:/Users/robd/dev/m2/repo/org/springframework/security/spring-security-core/5.8.13/spring-security-core-5.8.13.jar:/Users/robd/dev/m2/repo/org/springframework/security/spring-security-crypto/5.8.13/spring-security-crypto-5.8.13.jar:/Users/robd/dev/m2/repo/org/aspectj/aspectjrt/1.9.7/aspectjrt-1.9.7.jar:/Users/robd/dev/m2/repo/org/aspectj/aspectjweaver/1.9.7/aspectjweaver-1.9.7.jar:/Users/robd/dev/m2/repo/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/robd/dev/m2/repo/org/slf4j/jcl-over-slf4j/2.0.9/jcl-over-slf4j-2.0.9.jar:/Users/robd/dev/m2/repo/org/apache/logging/log4j/log4j-to-slf4j/2.23.1/log4j-to-slf4j-2.23.1.jar:/Users/robd/dev/m2/repo/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/Users/robd/dev/m2/repo/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar:/Users/robd/dev/m2/repo/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar:/Users/robd/dev/m2/repo/ch/qos/logback/logback-access/1.4.14/logback-access-1.4.14.jar:/Users/robd/dev/m2/repo/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/Users/robd/dev/m2/repo/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/robd/dev/m2/repo/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/robd/dev/m2/repo/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/robd/dev/m2/repo/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/robd/dev/m2/repo/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/robd/dev/m2/repo/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/robd/dev/m2/repo/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/robd/dev/m2/repo/org/springframework/spring-test/5.3.32/spring-test-5.3.32.jar:/Users/robd/dev/m2/repo/org/springframework/security/spring-security-test/5.8.13/spring-security-test-5.8.13.jar:/Users/robd/dev/m2/repo/org/springframework/security/spring-security-web/5.8.13/spring-security-web-5.8.13.jar:/Users/robd/dev/m2/repo/org/springframework/spring-web/5.3.37/spring-web-5.3.37.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/21.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/robd/dev/git/github/spring-security-advisors/target/surefire/surefirebooter-20240816153317917_3.jar /Users/robd/dev/git/github/spring-security-advisors/target/surefire 2024-08-16T15-33-16_574-jvmRun1 surefire-20240816153317917_1tmp surefire_0-20240816153317917_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/robd/dev/git/github/spring-security-advisors/target/test-classes:/Users/robd/dev/git/github/spring-security-advisors/target/classes:/Users/robd/dev/m2/repo/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/Users/robd/dev/m2/repo/javax/el/javax.el-api/3.0.0/javax.el-api-3.0.0.jar:/Users/robd/dev/m2/repo/jakarta/inject/jakarta.inject-api/1.0.3/jakarta.inject-api-1.0.3.jar:/Users/robd/dev/m2/repo/org/springframework/spring-core/5.3.32/spring-core-5.3.32.jar:/Users/robd/dev/m2/repo/org/springframework/spring-jcl/5.3.32/spring-jcl-5.3.32.jar:/Users/robd/dev/m2/repo/org/springframework/spring-beans/5.3.32/spring-beans-5.3.32.jar:/Users/robd/dev/m2/repo/org/springframework/spring-aop/5.3.32/spring-aop-5.3.32.jar:/Users/robd/dev/m2/repo/org/springframework/spring-aspects/5.3.32/spring-aspects-5.3.32.jar:/Users/robd/dev/m2/repo/org/springframework/spring-expression/5.3.32/spring-expression-5.3.32.jar:/Users/robd/dev/m2/repo/org/springframework/spring-tx/5.3.32/spring-tx-5.3.32.jar:/Users/robd/dev/m2/repo/org/springframework/spring-context/5.3.32/spring-context-5.3.32.jar:/Users/robd/dev/m2/repo/org/springframework/spring-context-support/5.3.32/spring-context-support-5.3.32.jar:/Users/robd/dev/m2/repo/org/springframework/security/spring-security-config/5.8.13/spring-security-config-5.8.13.jar:/Users/robd/dev/m2/repo/org/springframework/security/spring-security-core/5.8.13/spring-security-core-5.8.13.jar:/Users/robd/dev/m2/repo/org/springframework/security/spring-security-crypto/5.8.13/spring-security-crypto-5.8.13.jar:/Users/robd/dev/m2/repo/org/aspectj/aspectjrt/1.9.7/aspectjrt-1.9.7.jar:/Users/robd/dev/m2/repo/org/aspectj/aspectjweaver/1.9.7/aspectjweaver-1.9.7.jar:/Users/robd/dev/m2/repo/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/robd/dev/m2/repo/org/slf4j/jcl-over-slf4j/2.0.9/jcl-over-slf4j-2.0.9.jar:/Users/robd/dev/m2/repo/org/apache/logging/log4j/log4j-to-slf4j/2.23.1/log4j-to-slf4j-2.23.1.jar:/Users/robd/dev/m2/repo/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/Users/robd/dev/m2/repo/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar:/Users/robd/dev/m2/repo/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar:/Users/robd/dev/m2/repo/ch/qos/logback/logback-access/1.4.14/logback-access-1.4.14.jar:/Users/robd/dev/m2/repo/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/Users/robd/dev/m2/repo/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/robd/dev/m2/repo/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/robd/dev/m2/repo/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/robd/dev/m2/repo/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/robd/dev/m2/repo/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/robd/dev/m2/repo/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/robd/dev/m2/repo/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/robd/dev/m2/repo/org/springframework/spring-test/5.3.32/spring-test-5.3.32.jar:/Users/robd/dev/m2/repo/org/springframework/security/spring-security-test/5.8.13/spring-security-test-5.8.13.jar:/Users/robd/dev/m2/repo/org/springframework/security/spring-security-web/5.8.13/spring-security-web-5.8.13.jar:/Users/robd/dev/m2/repo/org/springframework/spring-web/5.3.37/spring-web-5.3.37.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/robd"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/21.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/robd/dev/git/github/spring-security-advisors"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/robd/dev/git/github/spring-security-advisors/target/surefire/surefirebooter-20240816153317917_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="21.0.2"/>
+    <property name="user.name" value="robd"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.6.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/robd/dev/m2/repo"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/zp/dk82_t1x16n4xmt6psntgv2m0000gn/T/"/>
+    <property name="java.version" value="21.0.2"/>
+    <property name="user.dir" value="/Users/robd/dev/git/github/spring-security-advisors"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/robd/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="21.0.2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testPostFilter" classname="org.radickins.ssa.SecuredServiceTest" time="0.032">
+    <error message="Collection already filtered." type="java.lang.RuntimeException"><![CDATA[java.lang.RuntimeException: Collection already filtered.
+	at org.radickins.ssa.security.CustomExpressionHandler.checkCollection(CustomExpressionHandler.java:46)
+	at org.radickins.ssa.security.CustomExpressionHandler.filter(CustomExpressionHandler.java:33)
+	at org.springframework.security.authorization.method.PostFilterAuthorizationMethodInterceptor.invoke(PostFilterAuthorizationMethodInterceptor.java:128)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:241)
+	at jdk.proxy2/jdk.proxy2.$Proxy42.filterSecuredVOs(Unknown Source)
+	at org.radickins.ssa.SecuredServiceTest.testPostFilter(SecuredServiceTest.java:32)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></error>
+    <system-out><![CDATA[2024-08-16 15:33:18,601 [main] DEBUG o.radickins.ssa.SecuredServiceTest - input: [SecuredVO[id=1,shouldFilter=true,filtered=false], SecuredVO[id=2,shouldFilter=false,filtered=false]] 
+2024-08-16 15:33:18,613 [main] DEBUG o.r.s.s.CustomExpressionHandler - Filtering target: [SecuredVO[id=1,shouldFilter=true,filtered=false], SecuredVO[id=2,shouldFilter=false,filtered=false]] 
+2024-08-16 15:33:18,614 [main] DEBUG o.r.s.s.CustomExpressionHandler - Filtering with expression: hasPermission(filterObject, 'SecuredVO:read') 
+2024-08-16 15:33:18,614 [main] DEBUG o.r.s.s.CustomExpressionHandler - Filtering collection with 2 elements 
+2024-08-16 15:33:18,623 [main] DEBUG o.r.s.s.CustomPermissionEvaluator - Evaluating permission: SecuredVO:read on target: SecuredVO[id=1,shouldFilter=true,filtered=true] for authentication: UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=test, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]] 
+2024-08-16 15:33:18,623 [main] DEBUG o.r.s.s.CustomPermissionEvaluator - Evaluating permission: SecuredVO:read on target: SecuredVO[id=2,shouldFilter=false,filtered=false] for authentication: UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=test, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]] 
+2024-08-16 15:33:18,624 [main] DEBUG o.r.s.s.CustomExpressionHandler - Retaining elements: [SecuredVO[id=1,shouldFilter=true,filtered=true], SecuredVO[id=2,shouldFilter=false,filtered=false]] 
+2024-08-16 15:33:18,624 [main] DEBUG o.r.s.s.CustomExpressionHandler - Filtering target: [SecuredVO[id=1,shouldFilter=true,filtered=true], SecuredVO[id=2,shouldFilter=false,filtered=false]] 
+]]></system-out>
+  </testcase>
+</testsuite>

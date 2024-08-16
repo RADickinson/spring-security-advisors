@@ -1,0 +1,8 @@
+org/radickins/ssa/security/CustomPermissionEvaluator.class
+org/radickins/ssa/SecurityConfiguration.class
+org/radickins/ssa/service/SecuredService.class
+org/radickins/ssa/security/CustomExpressionHandler.class
+org/radickins/ssa/service/SecuredServiceImpl.class
+org/radickins/ssa/SpringConfiguration.class
+org/radickins/ssa/security/Filterable.class
+org/radickins/ssa/service/SecuredVO.class

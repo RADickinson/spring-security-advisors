@@ -1,0 +1,8 @@
+/Users/robd/dev/git/github/spring-security-advisors/src/main/java/org/radickins/ssa/security/CustomExpressionHandler.java
+/Users/robd/dev/git/github/spring-security-advisors/src/main/java/org/radickins/ssa/service/SecuredServiceImpl.java
+/Users/robd/dev/git/github/spring-security-advisors/src/main/java/org/radickins/ssa/security/Filterable.java
+/Users/robd/dev/git/github/spring-security-advisors/src/main/java/org/radickins/ssa/service/SecuredService.java
+/Users/robd/dev/git/github/spring-security-advisors/src/main/java/org/radickins/ssa/service/SecuredVO.java
+/Users/robd/dev/git/github/spring-security-advisors/src/main/java/org/radickins/ssa/security/CustomPermissionEvaluator.java
+/Users/robd/dev/git/github/spring-security-advisors/src/main/java/org/radickins/ssa/SpringConfiguration.java
+/Users/robd/dev/git/github/spring-security-advisors/src/main/java/org/radickins/ssa/SecurityConfiguration.java

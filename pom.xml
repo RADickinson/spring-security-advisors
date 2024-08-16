@@ -1,0 +1,266 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <!-- POM Descriptor -->
+  <groupId>org.radickins</groupId>
+  <artifactId>spring-security-advisors</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <!-- POM summary -->
+  <name>Spring Security Advisors</name>
+
+  <!-- Project properties -->
+  <properties>
+    <java.source.version>11</java.source.version>
+    <java.target.version>11</java.target.version>
+
+    <!-- Skip javadoc generation by default -->
+    <maven.javadoc.skip>true</maven.javadoc.skip>
+    <!-- Dependency versions -->
+
+    <!-- JEE Specifications -->
+    <jee.cdi.version>1.0.3</jee.cdi.version>
+    <javax.el.version>3.0.0</javax.el.version>
+    <javax.annotation.version>1.3.2</javax.annotation.version>
+
+    <org.springframework.version>5.3.32</org.springframework.version>
+    <org.springframework.security.version>5.8.13</org.springframework.security.version>
+    <org.springframework.test.version>5.3.32</org.springframework.test.version>
+
+    <aop.aspectjrt.version>1.9.7</aop.aspectjrt.version>
+    <aop.apsectjweaver.version>1.9.7</aop.apsectjweaver.version>
+
+    <slf4j.version>2.0.9</slf4j.version>
+    <log4j.version>2.23.1</log4j.version>
+    <logback.version>1.4.14</logback.version>
+
+    <commons.lang3.version>3.13.0</commons.lang3.version>
+    <commons.collections4.version>4.4</commons.collections4.version>
+
+    <!-- TEST DEPENDENCIES -->
+    <junit.version>5.10.2</junit.version>
+
+    <!-- PLUGIN versions -->
+    <aspectj.maven.plugin>1.14.0</aspectj.maven.plugin>
+  </properties>
+
+  <dependencies>
+    <!-- COMPILE DEPENDENCIES -->
+    <dependency>
+      <groupId>javax.annotation</groupId>
+      <artifactId>javax.annotation-api</artifactId>
+      <version>${javax.annotation.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.el</groupId>
+      <artifactId>javax.el-api</artifactId>
+      <version>${javax.el.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>jakarta.inject</groupId>
+      <artifactId>jakarta.inject-api</artifactId>
+      <version>${jee.cdi.version}</version>
+    </dependency>
+
+    <!-- Spring framework dependencies -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>${org.springframework.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-beans</artifactId>
+      <version>${org.springframework.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-aop</artifactId>
+      <version>${org.springframework.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-aspects</artifactId>
+      <version>${org.springframework.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-expression</artifactId>
+      <version>${org.springframework.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-tx</artifactId>
+      <version>${org.springframework.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>${org.springframework.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context-support</artifactId>
+      <version>${org.springframework.version}</version>
+    </dependency>
+    <!-- Spring security dependencies -->
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-config</artifactId>
+      <version>${org.springframework.security.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-core</artifactId>
+      <version>${org.springframework.security.version}</version>
+    </dependency>
+
+    <!-- AspectJ dependencies -->
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjrt</artifactId>
+      <version>${aop.aspectjrt.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjweaver</artifactId>
+      <version>${aop.apsectjweaver.version}</version>
+    </dependency>
+
+    <!-- Logging dependencies -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${slf4j.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>jcl-over-slf4j</artifactId>
+      <version>${slf4j.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-to-slf4j</artifactId>
+      <version>${log4j.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>${logback.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-core</artifactId>
+      <version>${logback.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-access</artifactId>
+      <version>${logback.version}</version>
+    </dependency>
+
+    <!-- Apache commons dependencies -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>${commons.lang3.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-collections4</artifactId>
+      <version>${commons.collections4.version}</version>
+    </dependency>
+
+    <!-- TEST DEPENDENCIES -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Spring test -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
+      <version>${org.springframework.test.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-test</artifactId>
+      <version>${org.springframework.security.version}</version>
+    </dependency>
+
+  </dependencies>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <!-- The Maven builder in eclipse does not seem to support AJC compilation / weaving at the moment and so aspects that rely on this will fail when using class files generated from Eclipse. This only applies to aspects
+          that use the new operator to construct @Configurable beans that rely on Spring injection. The intention of this plugin configuration is to support this requirement, where the bean classes must be named XConfigurableBean.java -->
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>aspectj-maven-plugin</artifactId>
+          <version>${aspectj.maven.plugin}</version>
+          <dependencies>
+            <dependency>
+              <groupId>org.aspectj</groupId>
+              <artifactId>aspectjtools</artifactId>
+              <version>${aop.aspectjrt.version}</version>
+            </dependency>
+          </dependencies>
+          <configuration>
+            <sources>
+              <source>
+                <basedir>${project.build.sourceDirectory}</basedir>
+                <includes>
+                  <include>**/*ConfigurableBean.java</include>
+                </includes>
+              </source>
+            </sources>
+            <source>${java.source.version}</source>
+            <target>${java.target.version}</target>
+            <complianceLevel>${java.source.version}</complianceLevel>
+            <showWeaveInfo>true</showWeaveInfo>
+            <aspectLibraries>
+              <aspectLibrary>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aspects</artifactId>
+              </aspectLibrary>
+            </aspectLibraries>
+          </configuration>
+          <executions>
+            <execution>
+              <goals>
+                <goal>compile</goal>
+                <!-- Leave the test-compile goal commented as we only need to apply AJC compilation /weaving on these specific classes in src/main/java (currently). If the test-compile goal is included, AJC compilation /
+                  weaving occurs on all test classes and causes errors during execution for hitherto unknown reasons. -->
+                <!-- <goal>test-compile</goal> -->
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>aspectj-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>9</source>
+          <target>9</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: org.radickins.ssa.SecuredServiceTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.035 s <<< FAILURE! -- in org.radickins.ssa.SecuredServiceTest
+org.radickins.ssa.SecuredServiceTest.testPostFilter -- Time elapsed: 0.032 s <<< ERROR!
+java.lang.RuntimeException: Collection already filtered.
+	at org.radickins.ssa.security.CustomExpressionHandler.checkCollection(CustomExpressionHandler.java:46)
+	at org.radickins.ssa.security.CustomExpressionHandler.filter(CustomExpressionHandler.java:33)
+	at org.springframework.security.authorization.method.PostFilterAuthorizationMethodInterceptor.invoke(PostFilterAuthorizationMethodInterceptor.java:128)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:241)
+	at jdk.proxy2/jdk.proxy2.$Proxy42.filterSecuredVOs(Unknown Source)
+	at org.radickins.ssa.SecuredServiceTest.testPostFilter(SecuredServiceTest.java:32)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
