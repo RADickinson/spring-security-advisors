@@ -43,6 +43,7 @@ class CustomExpressionHandler extends DefaultMethodSecurityExpressionHandler {
         .anyMatch(Filterable::isFiltered);
 
     if (alreadyFiltered) {
+      logger.error("Collection already filtered.");
       throw new RuntimeException("Collection already filtered.");
     }
   }

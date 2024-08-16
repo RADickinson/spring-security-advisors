@@ -39,7 +39,7 @@
 
     <!-- TEST DEPENDENCIES -->
     <junit.version>5.10.2</junit.version>
-
+    <hamcrest.version>2.2</hamcrest.version>
     <!-- PLUGIN versions -->
     <aspectj.maven.plugin>1.14.0</aspectj.maven.plugin>
   </properties>
@@ -182,6 +182,12 @@
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
       <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest</artifactId>
+      <version>${hamcrest.version}</version>
       <scope>test</scope>
     </dependency>
 

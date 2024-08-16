@@ -1,5 +1,8 @@
 package org.radickins.ssa;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.radickins.ssa.service.SecuredService;
@@ -31,6 +34,7 @@ public class SecuredServiceTest {
     logger.debug("input: {}", input);
     final List<SecuredVO> output = securedService.filterSecuredVOs(new ArrayList<>(input));
     logger.debug("output: {}", output);
+    output.forEach(vo -> assertThat("VO not filtered.", vo.shouldFilter(), equalTo(vo.isFiltered())));
   }
 
 }
