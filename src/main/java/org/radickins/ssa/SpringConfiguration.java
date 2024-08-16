@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 @Configuration
 @EnableAspectJAutoProxy
 @EnableSpringConfigured
-//@EnableScheduling
 @EnableAsync
 @ComponentScan(basePackages = {"org.radickins.ssa"},
     excludeFilters = {@ComponentScan.Filter(type = FilterType.ANNOTATION, classes = {Controller.class, ControllerAdvice.class})})
